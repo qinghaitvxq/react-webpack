@@ -1,5 +1,7 @@
 .charactorInfo{
     width:200px;
-    height:200px;
-    border:solid 1px red;
+    border:solid 1px gray;
+}
+.charactorImg{
+    width:200px;
 }

@@ -10,6 +10,7 @@
              <div>
                 <div>
                     <Link to="/">小说人物</Link>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
                     <Link to="/novelText">小说简介</Link>
                 </div>
                 <div>
