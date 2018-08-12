@@ -1,6 +1,11 @@
+
 const bar = 10;
-const foo = bar + 20;
 
 
+const work=new Promise((resolve, reject) => {
+  resolve('some data');
+});
 
-document.write(foo);
+work.then((data) => {
+  console.log(data);
+});

@@ -1,10 +1,10 @@
- import React,{Component} from 'react';
+import React,{Component} from 'react';
  import {Link,Route} from 'react-router-dom';
 
  import NovelImage from './containers/NovelImage';
  import NovelText from './containers/NovelText';
 
- class App extends Component{
+class App extends Component {
      render(){
          return(
              <div>
