@@ -1,8 +1,13 @@
-import React,{Component} from 'react';
- import {Link,Route} from 'react-router-dom';
+import React, { Component } from 'react';
+import { Link, Route } from 'react-router-dom';
 
- import NovelImage from './containers/NovelImage';
- import NovelText from './containers/NovelText';
+import NovelImage from './containers/NovelImage';
+// import NovelText from './containers/NovelText'; 
+import asyncComponent from './hoc/asyncComponent';
+
+const AsyncNovelText=asyncComponent(() => {
+    return import('./containers/NovelText');
+});
 
 class App extends Component {
      render(){
@@ -15,7 +20,8 @@ class App extends Component {
                 </div>
                 <div>
                     <Route path="/" exact component={NovelImage} />
-                    <Route path="/novelText" component={NovelText} />
+                    <Route path="/novelText" component={ AsyncNovelText } />
+                    {/* <Route path="/novelText" component={NovelText} /> */}
                 </div>
              </div>
          )
