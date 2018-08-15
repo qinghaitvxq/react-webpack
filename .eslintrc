@@ -18,6 +18,10 @@
                 "args":"none"
             }
         ],
-        "react/jsx-filename-extension":"off"
+        "react/jsx-filename-extension":"off",
+        "indent":"off",
+        "eol-last":"off",
+        "react/jsx-indent":"off",
+        "react/jsx-indent-props":"off"
     }
 }
