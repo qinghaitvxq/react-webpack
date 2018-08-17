@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-
+import { Button } from 'antd';
 import CharactorInfo from '../components/CharactorInfo/CharactorInfo';
 
 class NovelImage extends Component {
@@ -8,6 +8,7 @@ class NovelImage extends Component {
         return (
             <div>
                 <h1>魔道祖师</h1>
+                <Button type="primary" >我是蚂蚁按钮</Button>
                 <CharactorInfo />
             </div>
         );

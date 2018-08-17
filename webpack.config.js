@@ -23,15 +23,15 @@ module.exports={
             },
             {
                 test:/\.css$/,
-                exclude:/node_modules/,
+                // exclude:/node_modules/,
                 use:[
                     {loader:'style-loader'},
                     {
                         loader:'css-loader',
                         options:{
                             importLoaders:1,
-                            modules:true,
-                            localIdentName:'[name]__[local]_[hash:base64:5]'
+                            // modules:true,
+                            // localIdentName:'[name]__[local]_[hash:base64:5]'
                         }
                     },
                     {
